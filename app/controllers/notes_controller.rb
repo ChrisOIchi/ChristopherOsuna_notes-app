@@ -1,6 +1,11 @@
 class NotesController < ApplicationController
   before_action :set_note, only: %i[ show edit update destroy ]
 
+  def search
+    @notes= Note.search_by_title(params[:search])
+    render :index
+  end
+
   def index
     @notes = Note.order(created_at: :desc)
 

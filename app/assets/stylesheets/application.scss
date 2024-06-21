@@ -5,3 +5,20 @@
 $primary-color: color("red", "base") !default;
 $secondary-color: color("red", "base") !default;
 @import "materialize";
+
+
+.search-form{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .search{
+    order: 1;
+    margin-right: 10px;
+  }
+
+  #search{
+    order: 2;
+  }
+  
